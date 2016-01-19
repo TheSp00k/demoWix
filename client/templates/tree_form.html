@@ -1,0 +1,15 @@
+<template name="treeForm">
+    <div>
+        <form id="addBranch">
+            <label for="title">Branch title</label>
+            <input type="text" name="branch_title" id="title"/>
+            <label for="name">Branch name</label>
+            <input type="text" name="branch_name" id="name"/>
+            <input type="submit" value="submit"/>
+            {{# if branches}}
+                <div>Append to:</div>
+                {{> tree branches=branches}}
+            {{/if}}
+        </form>
+    </div>
+</template>

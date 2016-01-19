@@ -1,0 +1,12 @@
+<template name="tree">
+    <ul>
+        {{#each item in branches}}
+            {{console.log item}}
+            <li>
+
+                <input type="radio" name="append_to" value="{{item.branch_name}}"/>
+                {{item.branch_title}}
+            </li>
+        {{/each}}
+    </ul>
+</template>
